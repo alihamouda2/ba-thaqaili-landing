@@ -76,11 +76,11 @@ export default function ProjectsList() {
               تصفح أبرز الأعمال والحلول الهندسية واللوجستية المنفذة بأعلى معايير الجودة والإتقان
             </p>
 
-            {/* أزرار التصفية التفاعلية بين قطاعات المشاريع */}
-            <div className="flex flex-wrap items-center justify-center gap-2.5 pt-4">
+            {/* أزرار التصفية التفاعلية بين قطاعات المشاريع (مستجيبة للهاتف مع شريط تمرير ناعم) */}
+            <div className="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto pb-2 pt-4 px-1 max-w-full no-scrollbar">
               <button
                 onClick={() => setSelectedCategory('ALL')}
-                className={`inline-flex items-center gap-1.5 px-5 py-2.5 rounded-2xl text-xs font-bold transition-all shadow-xs ${
+                className={`flex-shrink-0 inline-flex items-center gap-1.5 px-4 sm:px-5 py-2.5 rounded-2xl text-xs font-bold transition-all shadow-xs ${
                   selectedCategory === 'ALL'
                     ? 'bg-[#0f3d4a] text-white shadow-md scale-103'
                     : 'bg-white/80 text-slate-700 hover:bg-white hover:text-[#00b4b4] border border-slate-200'
@@ -92,7 +92,7 @@ export default function ProjectsList() {
 
               <button
                 onClick={() => setSelectedCategory('Contracting')}
-                className={`inline-flex items-center gap-1.5 px-5 py-2.5 rounded-2xl text-xs font-bold transition-all shadow-xs ${
+                className={`flex-shrink-0 inline-flex items-center gap-1.5 px-4 sm:px-5 py-2.5 rounded-2xl text-xs font-bold transition-all shadow-xs ${
                   selectedCategory === 'Contracting'
                     ? 'bg-[#00b4b4] text-white shadow-md scale-103'
                     : 'bg-white/80 text-slate-700 hover:bg-white hover:text-[#00b4b4] border border-slate-200'
@@ -104,7 +104,7 @@ export default function ProjectsList() {
 
               <button
                 onClick={() => setSelectedCategory('Logistics')}
-                className={`inline-flex items-center gap-1.5 px-5 py-2.5 rounded-2xl text-xs font-bold transition-all shadow-xs ${
+                className={`flex-shrink-0 inline-flex items-center gap-1.5 px-4 sm:px-5 py-2.5 rounded-2xl text-xs font-bold transition-all shadow-xs ${
                   selectedCategory === 'Logistics'
                     ? 'bg-[#00b4b4] text-white shadow-md scale-103'
                     : 'bg-white/80 text-slate-700 hover:bg-white hover:text-[#00b4b4] border border-slate-200'
@@ -116,7 +116,7 @@ export default function ProjectsList() {
 
               <button
                 onClick={() => setSelectedCategory('Infrastructure')}
-                className={`inline-flex items-center gap-1.5 px-5 py-2.5 rounded-2xl text-xs font-bold transition-all shadow-xs ${
+                className={`flex-shrink-0 inline-flex items-center gap-1.5 px-4 sm:px-5 py-2.5 rounded-2xl text-xs font-bold transition-all shadow-xs ${
                   selectedCategory === 'Infrastructure'
                     ? 'bg-[#00b4b4] text-white shadow-md scale-103'
                     : 'bg-white/80 text-slate-700 hover:bg-white hover:text-[#00b4b4] border border-slate-200'
@@ -128,7 +128,7 @@ export default function ProjectsList() {
 
               <button
                 onClick={() => setSelectedCategory('Maintenance')}
-                className={`inline-flex items-center gap-1.5 px-5 py-2.5 rounded-2xl text-xs font-bold transition-all shadow-xs ${
+                className={`flex-shrink-0 inline-flex items-center gap-1.5 px-4 sm:px-5 py-2.5 rounded-2xl text-xs font-bold transition-all shadow-xs ${
                   selectedCategory === 'Maintenance'
                     ? 'bg-[#00b4b4] text-white shadow-md scale-103'
                     : 'bg-white/80 text-slate-700 hover:bg-white hover:text-[#00b4b4] border border-slate-200'
@@ -138,6 +138,7 @@ export default function ProjectsList() {
                 <span>صيانة وتشغيل</span>
               </button>
             </div>
+
 
           </div>
 
