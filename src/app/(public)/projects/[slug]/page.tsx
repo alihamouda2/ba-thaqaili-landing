@@ -4,8 +4,9 @@ import React, { useState, use } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { MOCK_PROJECTS, Project } from '../../../../lib/mock-data';
-import BackgroundWatermark from '../../../../components/BackgroundWatermark';
 import Footer from '../../../../components/Footer';
+import FloatingWidgets from '../../../../components/FloatingWidgets';
+import PartnersSection from '../../../../components/landing/PartnersSection';
 import {
   MapPin,
   Calendar,
@@ -90,8 +91,7 @@ export default function ProjectDetailsPage({ params }: Props) {
   return (
     <div className="relative w-full min-h-screen bg-gradient-to-br from-[#e6f7f7] via-[#f5fbfb] to-[#e6f7f7] text-slate-900 overflow-hidden font-sans pb-16">
       
-      {/* العلامة المائية الشفافة في الخلفية */}
-      <BackgroundWatermark />
+      {/* الصفحة الرئيسية فوق الخلفية الموحدة */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 py-6 space-y-8">
         
@@ -393,6 +393,9 @@ export default function ProjectDetailsPage({ params }: Props) {
 
         </div>
 
+        {/* قسم شركاء النجاح والجهات المعتمدة */}
+        <PartnersSection />
+
         {/* الفوتر المكتمل أسفل الصفحة */}
         <Footer />
 
@@ -496,6 +499,9 @@ export default function ProjectDetailsPage({ params }: Props) {
           </div>
         </div>
       )}
+
+      {/* الأدوات العائمة التفاعلية */}
+      <FloatingWidgets />
 
     </div>
   );

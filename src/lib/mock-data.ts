@@ -60,11 +60,14 @@ export const MOCK_PROJECTS: Project[] = [
     email: "bathg.gcls@gmail.com",
     deliveryYear: "2026",
     gallery: [
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80"
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1200&q=80"
     ],
     facilities: [
       { name: "إشراف هندسي وحساب كميات", icon: "Building" },
-      { name: "عزل مائي وحراري معتمد", icon: "Shield" }
+      { name: "عزل مائي وحراري معتمد", icon: "ShieldCheck" },
+      { name: "مصاعد كهربائية عالية السرعة", icon: "Cpu" }
     ],
     unitTypes: [
       { type: "برج إداري تجاري", area: "3,200 م²", rooms: 20, baths: 12, priceStarting: "طلب سعر" }
@@ -92,11 +95,14 @@ export const MOCK_PROJECTS: Project[] = [
     email: "bathg.gcls@gmail.com",
     deliveryYear: "2026",
     gallery: [
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80"
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1200&q=80"
     ],
     facilities: [
       { name: "شاحنات حديثة ومجهزة", icon: "Truck" },
-      { name: "تتبع جغرافي ذكي 24/7", icon: "Cpu" }
+      { name: "تتبع جغرافي ذكي 24/7", icon: "Cpu" },
+      { name: "مستودعات وتخزين آمن", icon: "Building" }
     ],
     unitTypes: [
       { type: "أسطول شحن لوجستي", area: "5,000 م²", rooms: 0, baths: 0, priceStarting: "طلب سعر" }
@@ -114,7 +120,7 @@ export const MOCK_PROJECTS: Project[] = [
     district: "الريان - الشحر",
     status: "Completed",
     statusText: "مكتمل",
-    heroImageUrl: "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=1200&q=80",
+    heroImageUrl: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1200&q=80",
     unitsCount: 1,
     minArea: 2000,
     maxArea: 10000,
@@ -124,10 +130,13 @@ export const MOCK_PROJECTS: Project[] = [
     email: "bathg.gcls@gmail.com",
     deliveryYear: "2026",
     gallery: [
-      "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=1200&q=80"
+      "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1548337138-e87d889cc369?auto=format&fit=crop&w=1200&q=80"
     ],
     facilities: [
-      { name: "ألواح كهرضوئية ذات كفاءة عالية", icon: "Sun" }
+      { name: "ألواح كهرضوئية ذات كفاءة عالية", icon: "Sun" },
+      { name: "أنظمة تخزين وبطاريات ذكية", icon: "Cpu" }
     ],
     unitTypes: [
       { type: "محطة طاقة شمسية 100KW", area: "10,000 م²", rooms: 0, baths: 0, priceStarting: "طلب سعر" }
@@ -155,10 +164,12 @@ export const MOCK_PROJECTS: Project[] = [
     email: "bathg.gcls@gmail.com",
     deliveryYear: "2026",
     gallery: [
-      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=80"
+      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80"
     ],
     facilities: [
-      { name: "محولات شبكة ذكية", icon: "Cpu" }
+      { name: "محولات شبكة ذكية", icon: "Cpu" },
+      { name: "أنظمة حماية وقطع آلية", icon: "ShieldCheck" }
     ],
     unitTypes: [
       { type: "محطة توزيع قوى", area: "6,000 م²", rooms: 0, baths: 0, priceStarting: "طلب سعر" }
@@ -186,10 +197,13 @@ export const MOCK_PROJECTS: Project[] = [
     email: "bathg.gcls@gmail.com",
     deliveryYear: "2026",
     gallery: [
-      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80"
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80"
     ],
     facilities: [
-      { name: "مرافق سكنية متكاملة", icon: "Building" }
+      { name: "مرافق سكنية متكاملة", icon: "Building" },
+      { name: "مواقف سيارات خاصة", icon: "Car" }
     ],
     unitTypes: [
       { type: "وحدة سكنية عائلية", area: "250 م²", rooms: 4, baths: 3, priceStarting: "طلب سعر" }
@@ -217,10 +231,12 @@ export const MOCK_PROJECTS: Project[] = [
     email: "bathg.gcls@gmail.com",
     deliveryYear: "2026",
     gallery: [
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80"
+      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80"
     ],
     facilities: [
-      { name: "فريق هندسي متخصص للموقع", icon: "Wrench" }
+      { name: "فريق هندسي متخصص للموقع", icon: "Wrench" },
+      { name: "استجابة صيانة طوارئ 24/7", icon: "Activity" }
     ],
     unitTypes: [
       { type: "عقد صيانة تشغيلي", area: "12,000 م²", rooms: 0, baths: 0, priceStarting: "طلب سعر" }

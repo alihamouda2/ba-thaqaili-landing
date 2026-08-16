@@ -160,3 +160,23 @@ body {
   background-image: radial-gradient(rgba(0, 180, 180, 0.08) 1.5px, transparent 1.5px);
   background-size: 28px 28px;
 }
+
+/* 6. حركة شريط الشركاء اللانهائي (Infinite Partner Logos Marquee) */
+@keyframes infiniteMarquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.animate-marquee-slow {
+  display: flex;
+  width: max-content;
+  animation: infiniteMarquee 32s linear infinite;
+}
+
+.animate-marquee-slow:hover {
+  animation-play-state: paused;
+}
