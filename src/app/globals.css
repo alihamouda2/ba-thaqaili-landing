@@ -1,0 +1,162 @@
+@import "tailwindcss";
+
+:root {
+  --font-din: var(--font-din-arabic), 'FF DIN Arabic', 'DIN Next Arabic', 'IBM Plex Sans Arabic', system-ui, -apple-system, sans-serif;
+  --color-bathgili-teal: #00b4b4;
+  --color-bathgili-dark: #0f3d4a;
+}
+
+*, body, html, input, button, select, textarea {
+  font-family: var(--font-din), 'FF DIN Arabic', 'DIN Next Arabic', system-ui, sans-serif !important;
+  direction: rtl;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* نمط DIN Bold / Black للعنوان الرئيسي */
+h1, h2, h3, h4, h5, h6, .din-bold, .din-black {
+  font-family: var(--font-din), 'FF DIN Arabic', 'DIN Next Arabic', system-ui, sans-serif !important;
+  font-weight: 700 !important;
+}
+
+/* نمط DIN Medium للسطر الفرعي والمحتوى */
+p, span, a, li, .din-medium {
+  font-family: var(--font-din), 'FF DIN Arabic', 'DIN Next Arabic', system-ui, sans-serif !important;
+  font-weight: 500 !important;
+}
+
+body {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+
+/* تخصيص شريط التمرير التايل الزاهي */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00b4b4;
+}
+
+/* ========================================================================= */
+/* MOTION DESIGN & ANIMATIONS (قواعد الحركات والإنيميشن التفاعلية) */
+/* ========================================================================= */
+
+/* 1. حركة الطفو الانسيابي (Floating Animation) */
+@keyframes floatSlow {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+/* 2. حركة النبض والوهج الهادئ (Glow Pulse) */
+@keyframes glowPulse {
+
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.65;
+    transform: scale(1.05);
+  }
+}
+
+.animate-glow {
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+/* 3. حركة ظهور العناصر الانسيابي (Fade Up) */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* 4. تأثير الزر المضيء والشيمر (Shimmer Button Effect) */
+.btn-bathgili-pill {
+  position: relative;
+  background-color: #00b4b4;
+  color: #ffffff;
+  border-radius: 9999px;
+  font-weight: 800;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-bathgili-pill::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.3),
+      transparent);
+  transition: left 0.7s ease;
+}
+
+.btn-bathgili-pill:hover::before {
+  left: 100%;
+}
+
+.btn-bathgili-pill:hover {
+  background-color: #009999;
+  box-shadow: 0 12px 28px -6px rgba(0, 180, 180, 0.45);
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* 5. بطاقات التشييد واللوجستيات مع التجاوب الحركي */
+.card-service-mockup {
+  background: #ffffff;
+  border: 1px solid #f1f5f9;
+  box-shadow: 0 10px 30px -5px rgba(0, 180, 180, 0.05), 0 4px 12px -2px rgba(15, 23, 42, 0.03);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-service-mockup:hover {
+  border-color: rgba(0, 180, 180, 0.45);
+  box-shadow: 0 20px 45px -10px rgba(0, 180, 180, 0.18), 0 8px 20px -4px rgba(15, 23, 42, 0.04);
+  transform: translateY(-6px);
+}
+
+/* النقش المائي خلف بطاقات المشاريع */
+.bg-watermark-bathgili {
+  background-image: radial-gradient(rgba(0, 180, 180, 0.08) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+}
